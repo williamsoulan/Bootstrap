@@ -1,0 +1,48 @@
+$primary: #dc3545;
+$text-color: #fff;
+$h1: 28px;
+$p: 12px;
+
+@mixin bordure($couleur, $largeur: 1px) {
+    border: $largeur solid $couleur;
+    border-radius: 5px;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin inline-block($align, $margin : 20px) { // Si aucune valeur n'est précisée alors $margin vaut 10px
+    display: inline-block;
+    vertical-align: $align;
+    padding: 20px;
+    background-color: #dc3545;
+}
+
+.test1 {
+    background-color: $primary;
+    color: $text-color;
+
+    h1 {
+    size: $h1;
+    }
+}
+
+.button {
+    @include bordure(blue);
+}
+
+.card {
+    @include bordure(red, 2px);
+    text-align: center;
+}
+
+
+
+// Appel de la mixin
+.bloc {
+    @include inline-block(middle);
+    @include center();
+}

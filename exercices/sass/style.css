@@ -1,0 +1,28 @@
+.test1 {
+  background-color: #dc3545;
+  color: #fff;
+}
+.test1 h1 {
+  size: 28px;
+}
+
+.button {
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.card {
+  border: 2px solid red;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bloc {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+  background-color: #dc3545;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
